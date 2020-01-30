@@ -7,7 +7,7 @@ The steps specific to the wavefront operator are captured here:
 2. Create a new wavefront-operator project:
 ```
 $ cd  $HOME/dev
-$ operator-sdk new wavefront-operator --repo=github.com/wavefronthq/wavefront-operator
+$ operator-sdk new wavefront-operator --repo=github.com/marineghandevosyan/wavefront-operator
 $ cd wavefront-operator
 ```
 

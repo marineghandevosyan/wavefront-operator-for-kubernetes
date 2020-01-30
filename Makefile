@@ -1,4 +1,4 @@
-PREFIX?=wavefronthq
+PREFIX?=marineghandevosyan
 DOCKER_IMAGE=wavefront-operator-for-kubernetes
 ARCH?=amd64
 OUT_DIR?=build/_output/bin

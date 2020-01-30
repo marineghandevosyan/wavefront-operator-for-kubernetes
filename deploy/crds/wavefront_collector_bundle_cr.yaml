@@ -77,7 +77,7 @@ metadata:
   name: wavefront-collector
   namespace: wavefront
 spec:
-  image: wavefronthq/wavefront-kubernetes-collector:1.0.0-rc8
+  image: marineghandevosyan/wavefront-kubernetes-collector:1.0.0-rc8
   daemon: true
   configName: collector-config
 

@@ -33,8 +33,8 @@ Now login into Wavefront and search for the "openshift-demo-cluster" in kubernet
 
 ## Using External Proxy
 Wavefront Collector can be configured to use external proxy using below steps:
-1. Download example configuration [file](https://raw.githubusercontent.com/wavefrontHQ/wavefront-collector-for-kubernetes/master/deploy/examples/openshift-collector-configmap.yaml).
-2. Update `sinks.proxyAddress` with your external proxy address. Please refer this [document](https://github.com/wavefrontHQ/wavefront-collector-for-kubernetes/blob/master/docs/configuration.md) for more configuration options.
+1. Download example configuration [file](https://raw.githubusercontent.com/marineghandevosyan/wavefront-collector-for-kubernetes/master/deploy/examples/openshift-collector-configmap.yaml).
+2. Update `sinks.proxyAddress` with your external proxy address. Please refer this [document](https://github.com/marineghandevosyan/wavefront-collector-for-kubernetes/blob/master/docs/configuration.md) for more configuration options.
 3. Create a configMap using downloaded file under the project where operator is deployed.
 4. Now deploy the collector by navigating to Installed Operators → Wavefront Operator → Wavefront Collector → Create New.
 5. Set `spec.useOpenshiftDefaultConfig` to `false` and `spec.configName` to the configMap name created in step 3.

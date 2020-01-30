@@ -1,4 +1,4 @@
-module github.com/wavefronthq/wavefront-operator-for-kubernetes
+module github.com/marineghandevosyan/wavefront-operator-for-kubernetes
 
 require (
 	github.com/Masterminds/semver v1.4.2

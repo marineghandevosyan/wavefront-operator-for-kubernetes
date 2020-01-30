@@ -56,7 +56,7 @@ spec:
                 type: object
               type: array
             image:
-              description: Defaults to wavefronthq/wavefront-kubernetes-collector:latest
+              description: Defaults to marineghandevosyan/wavefront-kubernetes-collector:latest
               type: string
             openshift:
               description: Set to true when running collector in Openshift platform.

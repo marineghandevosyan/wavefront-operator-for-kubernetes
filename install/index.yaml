@@ -21,8 +21,8 @@ entries:
       name: akodali18
     name: wavefront-operator
     sources:
-    - https://github.com/wavefrontHQ/wavefront-collector-for-kubernetes
-    - https://github.com/wavefrontHQ/java/tree/master/proxy
+    - https://github.com/marineghandevosyan/wavefront-collector-for-kubernetes
+    - https://github.com/marineghandevosyan/java/tree/master/proxy
     urls:
     - wavefront-operator-0.9.0.tgz
     version: 0.9.0

@@ -211,7 +211,7 @@ spec:
                 type: object
               type: array
             image:
-              description: Defaults to wavefronthq/wavefront-kubernetes-collector:latest
+              description: Defaults to marineghandevosyan/wavefront-kubernetes-collector:latest
               type: string
             resources:
               description: Compute resources required by the Collector containers.
@@ -283,7 +283,7 @@ spec:
               format: int32
               type: integer
             image:
-              description: The WavefrontProxy image to use. Defaults to wavefronthq/proxy:latest
+              description: The WavefrontProxy image to use. Defaults to marineghandevosyan/proxy:latest
               type: string
             jaegerPort:
               description: The port to listen on for Jaeger Thrift formatted data.
@@ -376,7 +376,7 @@ spec:
       serviceAccountName: wavefront-operator
       containers:
         - name: wavefront-operator
-          image: wavefronthq/wavefront-operator-for-kubernetes:0.9.0
+          image: marineghandevosyan/wavefront-operator-for-kubernetes:0.9.0
           command:
           - wavefront-operator
           imagePullPolicy: IfNotPresent

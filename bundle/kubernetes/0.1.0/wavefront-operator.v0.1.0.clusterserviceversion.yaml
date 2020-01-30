@@ -14,7 +14,7 @@ metadata:
           "spec": {
             "token": "\u003cTOKEN\u003e",
             "url": "\u003chttps://YOUR_CLUSTER.wavefront.com/api/\u003e",
-            "image": "wavefronthq/proxy:5.7"
+            "image": "marineghandevosyan/proxy:5.7"
           }
         },
         {
@@ -50,7 +50,7 @@ metadata:
                 }
               }
             ],
-            "image": "wavefronthq/wavefront-kubernetes-collector:1.0.3",
+            "image": "marineghandevosyan/wavefront-kubernetes-collector:1.0.3",
             "tolerations": [
               {
                 "effect": "NoSchedule",
@@ -69,11 +69,11 @@ metadata:
     capabilities: Seamless Upgrades
     categories: "Monitoring"
     description: The Wavefront Operator for Kubernetes supports deploying the Wavefront Collector and the Wavefront Proxy in Kubernetes.
-    containerImage: wavefronthq/wavefront-operator-for-kubernetes:0.1.0-rc2
+    containerImage: marineghandevosyan/wavefront-operator-for-kubernetes:0.1.0-rc2
     createdAt: 2019-11-29T02:09:59Z
     support: Wavefront by VMware
     certified: "true"
-    repository: https://github.com/wavefrontHQ/wavefront-operator
+    repository: https://github.com/marineghandevosyan/wavefront-operator
 
   name: wavefront-operator.v0.1.0
   namespace: placeholder
@@ -113,7 +113,7 @@ spec:
           * `spec.token`         : Wavefront API token.
 
        ```
-           curl -O https://raw.githubusercontent.com/wavefrontHQ/wavefront-operator/master/deploy/crds/wavefront_proxy_basic_cr.yaml 
+           curl -O https://raw.githubusercontent.com/marineghandevosyan/wavefront-operator/master/deploy/crds/wavefront_proxy_basic_cr.yaml
            kubectl create -f wavefront_proxy_basic_cr.yaml
        ```  
      
@@ -126,7 +126,7 @@ spec:
           * `sinks.proxyAddress` : The address for the Wavefront Proxy. The proxy can be anywhere network reachable including outside of the cluster.
        
        ```
-           curl -O https://raw.githubusercontent.com/wavefrontHQ/wavefront-operator/master/deploy/crds/wavefront_collector_bundle_cr.yaml
+           curl -O https://raw.githubusercontent.com/marineghandevosyan/wavefront-operator/master/deploy/crds/wavefront_collector_bundle_cr.yaml
            kubectl create -f wavefront_collector_bundle_cr.yaml
        ```
 
@@ -199,7 +199,7 @@ spec:
                       fieldPath: metadata.name
                 - name: OPERATOR_NAME
                   value: wavefront-operator
-                image: wavefronthq/wavefront-operator-for-kubernetes:0.1.0-rc2
+                image: marineghandevosyan/wavefront-operator-for-kubernetes:0.1.0-rc2
                 imagePullPolicy: Always
                 name: wavefront-operator
                 resources: {}
@@ -287,7 +287,7 @@ spec:
     name: VMware
   links:
   - name: Wavefront Operator
-    url: https://github.com/wavefrontHQ/wavefront-operator
+    url: https://github.com/marineghandevosyan/wavefront-operator
   version: 0.1.0
 
 

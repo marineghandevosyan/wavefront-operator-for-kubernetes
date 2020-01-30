@@ -16,7 +16,7 @@ spec:
       serviceAccountName: wavefront-operator
       containers:
         - name: wavefront-operator
-          image: wavefronthq/wavefront-operator-for-kubernetes:0.9.0
+          image: marineghandevosyan/wavefront-operator-for-kubernetes:0.9.0
           command:
           - wavefront-operator
           imagePullPolicy: IfNotPresent

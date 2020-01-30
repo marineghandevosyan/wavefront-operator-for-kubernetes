@@ -16,7 +16,7 @@ type WavefrontProxySpec struct {
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
 
-	// The WavefrontProxy image to use. Defaults to wavefronthq/proxy:latest
+	// The WavefrontProxy image to use. Defaults to marineghandevosyan/proxy:latest
 	Image string `json:"image,omitempty"`
 
 	// Wavefront URL (cluster).

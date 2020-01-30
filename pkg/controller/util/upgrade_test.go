@@ -10,11 +10,11 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
 )
 
-var DockerHubProxy string = "wavefronthq/proxy:"
+var DockerHubProxy string = "marineghandevosyan/proxy:"
 
-var DockerHubCollector string = "wavefronthq/wavefront-kubernetes-collector:"
+var DockerHubCollector string = "marineghandevosyan/wavefront-kubernetes-collector:"
 
-var OpenShiftProxy string = "registry.connect.redhat.com/wavefronthq/proxy:"
+var OpenShiftProxy string = "registry.connect.redhat.com/marineghandevosyan/proxy:"
 
 func TestProxyValidUpgrade(t *testing.T) {
 	reqLogger := logf.Log.WithName("Upgrade_Test")

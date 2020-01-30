@@ -16,7 +16,7 @@ To deploy this operator, you will need a cluster with the following minimum setu
 
 ### Add the Wavefront Repo
 ```
-helm repo add wavefront 'https://raw.githubusercontent.com/wavefrontHQ/wavefront-operator/master/install/'
+helm repo add wavefront 'https://raw.githubusercontent.com/marineghandevosyan/wavefront-operator/master/install/'
 helm repo update
 ```
 

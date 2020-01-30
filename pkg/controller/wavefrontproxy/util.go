@@ -15,7 +15,7 @@ import (
 // getLabels returns the labels for the given WavefrontProxy CR name.
 func getLabels(ip *InternalWavefrontProxy) map[string]string {
 	// For consistency, labels assigned are as per suggested yaml at
-	// https://github.com/wavefrontHQ/wavefront-kubernetes/blob/master/wavefront-proxy/wavefront.yaml
+	// https://github.com/marineghandevosyan/wavefront-kubernetes/blob/master/wavefront-proxy/wavefront.yaml
 	// If any changes are made, make sure they are reflected in both places.
 	// TODO: For now, these labels are good enough. When we make the operator cluster scoped,
 	// we will need to add namespace as an additional label here.

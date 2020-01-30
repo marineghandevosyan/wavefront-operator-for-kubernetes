@@ -17,7 +17,7 @@ wavefront:
 operator:
   enabled: true
   image:
-    repository: wavefronthq/wavefront-operator-for-kubernetes
+    repository: marineghandevosyan/wavefront-operator-for-kubernetes
     tag: 0.9.0
     pullPolicy: IfNotPresent
 
@@ -28,7 +28,7 @@ operator:
 collector:
   enabled: true
   image:
-    repository: wavefronthq/wavefront-kubernetes-collector
+    repository: marineghandevosyan/wavefront-kubernetes-collector
     tag: 1.0.7
     pullPolicy: IfNotPresent
 
@@ -86,7 +86,7 @@ collector:
   #   region: us-west-2
 
   ## Rules based discovery configuration
-  ## Ref: https://github.com/wavefrontHQ/wavefront-kubernetes-collector/blob/master/docs/discovery.md
+  ## Ref: https://github.com/marineghandevosyan/wavefront-kubernetes-collector/blob/master/docs/discovery.md
   discovery:
     enabled: true
   ## Can be used to add additional discovery rules
@@ -149,7 +149,7 @@ collector:
 proxy:
   enabled: true
   image:
-    repository: wavefronthq/proxy
+    repository: marineghandevosyan/proxy
     tag: 5.7
 
   ## The port number the proxy will listen on for metrics in Wavefront data format.
@@ -185,7 +185,7 @@ proxy:
   #	histogramDistPort: 40000
 
   ## The name of the config map providing the preprocessor rules for the Wavefront proxy.
-  ## This is synonymous to https://github.com/wavefrontHQ/wavefront-proxy/blob/master/pkg/etc/wavefront/wavefront-proxy/preprocessor_rules.yaml.default
+  ## This is synonymous to https://github.com/marineghandevosyan/wavefront-proxy/blob/master/pkg/etc/wavefront/wavefront-proxy/preprocessor_rules.yaml.default
   #	preprocessor:
 
   ## The name of the config map providing the advanced configurations for the Wavefront proxy.

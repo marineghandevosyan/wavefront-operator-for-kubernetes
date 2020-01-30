@@ -9,14 +9,14 @@ import (
 
 	"github.com/go-logr/logr"
 
-	wfv1 "github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1"
-	"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/controller/util"
+	wfv1 "github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1"
+	"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/controller/util"
 
 	corev1 "k8s.io/api/core/v1"
 )
 
 const (
-	defaultImage = "wavefronthq/proxy:latest"
+	defaultImage = "marineghandevosyan/proxy:latest"
 
 	defaultMetricPort = 2878
 

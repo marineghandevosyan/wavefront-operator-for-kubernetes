@@ -14,7 +14,7 @@ type WavefrontCollectorSpec struct {
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
 
-	// Defaults to wavefronthq/wavefront-kubernetes-collector:latest
+	// Defaults to marineghandevosyan/wavefront-kubernetes-collector:latest
 	Image string `json:"image,omitempty"`
 
 	// Whether to deploy the collector as a daemonset. False will roll out as a deployment.

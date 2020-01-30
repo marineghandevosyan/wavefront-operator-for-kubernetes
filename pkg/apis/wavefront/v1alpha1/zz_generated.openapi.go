@@ -11,12 +11,12 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollector":       schema_pkg_apis_wavefront_v1alpha1_WavefrontCollector(ref),
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec":   schema_pkg_apis_wavefront_v1alpha1_WavefrontCollectorSpec(ref),
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus": schema_pkg_apis_wavefront_v1alpha1_WavefrontCollectorStatus(ref),
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxy":           schema_pkg_apis_wavefront_v1alpha1_WavefrontProxy(ref),
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec":       schema_pkg_apis_wavefront_v1alpha1_WavefrontProxySpec(ref),
-		"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus":     schema_pkg_apis_wavefront_v1alpha1_WavefrontProxyStatus(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollector":       schema_pkg_apis_wavefront_v1alpha1_WavefrontCollector(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec":   schema_pkg_apis_wavefront_v1alpha1_WavefrontCollectorSpec(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus": schema_pkg_apis_wavefront_v1alpha1_WavefrontCollectorStatus(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxy":           schema_pkg_apis_wavefront_v1alpha1_WavefrontProxy(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec":       schema_pkg_apis_wavefront_v1alpha1_WavefrontProxySpec(ref),
+		"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus":     schema_pkg_apis_wavefront_v1alpha1_WavefrontProxyStatus(ref),
 	}
 }
 
@@ -47,19 +47,19 @@ func schema_pkg_apis_wavefront_v1alpha1_WavefrontCollector(ref common.ReferenceC
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec"),
+							Ref: ref("github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus"),
+							Ref: ref("github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec", "github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorSpec", "github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontCollectorStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -71,7 +71,7 @@ func schema_pkg_apis_wavefront_v1alpha1_WavefrontCollectorSpec(ref common.Refere
 				Properties: map[string]spec.Schema{
 					"image": {
 						SchemaProps: spec.SchemaProps{
-							Description: "Defaults to wavefronthq/wavefront-kubernetes-collector:latest",
+							Description: "Defaults to marineghandevosyan/wavefront-kubernetes-collector:latest",
 							Type:        []string{"string"},
 							Format:      "",
 						},
@@ -210,19 +210,19 @@ func schema_pkg_apis_wavefront_v1alpha1_WavefrontProxy(ref common.ReferenceCallb
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec"),
+							Ref: ref("github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus"),
+							Ref: ref("github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec", "github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxySpec", "github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1.WavefrontProxyStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -234,7 +234,7 @@ func schema_pkg_apis_wavefront_v1alpha1_WavefrontProxySpec(ref common.ReferenceC
 				Properties: map[string]spec.Schema{
 					"image": {
 						SchemaProps: spec.SchemaProps{
-							Description: "The WavefrontProxy image to use. Defaults to wavefronthq/proxy:latest",
+							Description: "The WavefrontProxy image to use. Defaults to marineghandevosyan/proxy:latest",
 							Type:        []string{"string"},
 							Format:      "",
 						},

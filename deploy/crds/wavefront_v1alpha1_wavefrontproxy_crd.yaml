@@ -50,7 +50,7 @@ spec:
               format: int32
               type: integer
             image:
-              description: The WavefrontProxy image to use. Defaults to wavefronthq/proxy:latest
+              description: The WavefrontProxy image to use. Defaults to marineghandevosyan/proxy:latest
               type: string
             jaegerPort:
               description: The port to listen on for Jaeger Thrift formatted data.

@@ -4,7 +4,7 @@
 package controller
 
 import (
-	"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/controller/wavefrontcollector"
+	"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/controller/wavefrontcollector"
 )
 
 func init() {

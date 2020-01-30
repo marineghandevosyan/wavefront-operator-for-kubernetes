@@ -4,7 +4,7 @@
 package apis
 
 import (
-	"github.com/wavefronthq/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1"
+	"github.com/marineghandevosyan/wavefront-operator-for-kubernetes/pkg/apis/wavefront/v1alpha1"
 )
 
 func init() {

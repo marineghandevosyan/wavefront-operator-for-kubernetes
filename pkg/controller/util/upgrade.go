@@ -19,7 +19,7 @@ const (
 
 	CollectorImageName = "wavefront-kubernetes-collector"
 
-	DockerHubImagePrefix = "wavefronthq/"
+	DockerHubImagePrefix = "marineghandevosyan/"
 
 	TestSuffix = "-test"
 )
@@ -30,11 +30,11 @@ func GetLatestVersion(crImage string, reqLogger logr.Logger) (string, error) {
 	crImageName := imgSlice[0]
 	currentVersion := imgSlice[1]
 
-	// Auto upgrade is supported only for official wavefronthq docker hub images.
+	// Auto upgrade is supported only for official marineghandevosyan docker hub images.
 	// Relax docker hub official repository constraint for image names with suffix "-test".
 	if !strings.HasSuffix(crImageName, TestSuffix) {
 		if !strings.HasPrefix(crImage, DockerHubImagePrefix) {
-			reqLogger.Info("Auto Upgrade not supported,", "Cause :: Not an offically supported wavefronthq Docker Hub Image.", crImage)
+			reqLogger.Info("Auto Upgrade not supported,", "Cause :: Not an offically supported marineghandevosyan Docker Hub Image.", crImage)
 			return "", nil
 		}
 	}
